@@ -40,6 +40,7 @@ const PaymentSuccess = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-green-100 p-6">
+      <title>BookCourier | Payment Success</title>
       <h1 className="text-3xl font-bold text-green-800 mb-4">{message}</h1>
       <Link
         to="/dashboard/my-orders"
