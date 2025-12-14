@@ -4,6 +4,9 @@ import useAuth from '../hooks/useAuth';
 import useRole from '../hooks/useRole';
 import toast from 'react-hot-toast';
 import { FiLogIn, FiLogOut } from "react-icons/fi";
+import { AiTwotoneDashboard } from "react-icons/ai";
+import { CgProfile } from "react-icons/cg";
+import { LiaUserEditSolid } from "react-icons/lia";
 
 const NavBar = () => {
   const { user, logOut } = useAuth();
@@ -110,18 +113,15 @@ const NavBar = () => {
               </label>
               <ul tabIndex={0} className="menu menu-sm dropdown-content bg-green-50 rounded-box z-50 mt-3 w-64 p-2 shadow-lg">
                 <li className="menu-title">
-                  <NavLink to="/profile">
-                    <div className="flex flex-col gap-1 px-2 py-2">
+                  <div className="flex flex-col gap-1 px-2 py-2">
                       <span className="font-bold text-base">{user.displayName || 'User'}</span>
                       <span className="text-xs text-gray-600">{user.email}</span> {/* email only here */}
                     </div>
-                  </NavLink>
                 </li>
                 <div className="divider my-0"></div>
-                <li><NavLink to="/dashboard">Dashboard</NavLink></li>
-                <li><NavLink to="/add-food">Add Food</NavLink></li>
-                <li><NavLink to="/manage-food">Manage My Foods</NavLink></li>
-                <li><NavLink to="/req-food">My Food Requests</NavLink></li>
+                <li><NavLink to="/dashboard"><AiTwotoneDashboard />Dashboard</NavLink></li>
+                <li><NavLink to="/profile"><CgProfile />My Profile</NavLink></li>
+                <li><NavLink to="/update-profile"><LiaUserEditSolid />Update Profile</NavLink></li>
                 <div className="divider my-0"></div>
                 <button onClick={handleLogout} className="btn btn-error btn-sm mt-1 ml-2 h-8 w-auto text-[15px] px-4 flex items-center gap-2">
                   <FiLogOut /> Logout
