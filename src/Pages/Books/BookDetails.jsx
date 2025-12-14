@@ -129,6 +129,7 @@ const BookDetails = () => {
 
   return (
     <div className="max-w-5xl mx-auto p-6">
+      <title>BookCourier | Book Details & Reviews</title>
       {/* Back Button */}
       <button
         onClick={() => navigate(-1)}
