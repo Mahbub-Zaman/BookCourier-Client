@@ -33,7 +33,7 @@ const UpdateProfile = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 flex justify-center items-start py-16 px-4">
-      <title>PlateShare | Update Profile</title>
+      <title>BookCourier | Update Profile</title>
       <Toaster position="top-right" reverseOrder={false} />
 
       <div className="w-full max-w-5xl bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row">
