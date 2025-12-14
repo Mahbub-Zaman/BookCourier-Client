@@ -27,6 +27,7 @@ const AllBooks = () => {
 
   return (
     <div className="bg-gray-200 min-h-screen border-b-theme">
+      <title>BookCourier | All Available Books</title>
       <div className="max-w-7xl mx-auto p-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         {/* Search Input */}
         <input
