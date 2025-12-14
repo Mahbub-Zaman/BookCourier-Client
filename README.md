@@ -89,7 +89,7 @@ Follow these steps to run the PlateShare project locally:
 
 1. **Clone the repository:**  
 ```bash
-git clone https://github.com/Mahbub-Zaman/
+git clone https://github.com/Mahbub-Zaman/BookCourier-Client.git
 ```
 
 2. **Navigate to the project folder**
@@ -112,6 +112,10 @@ npm install
 ```bash
 npm run dev
 ```
+
+6. **🌐 Open in browser:**
+
+Navigate to http://localhost:5173 (or the port specified in your setup) to access the app.
 
 ---
 
