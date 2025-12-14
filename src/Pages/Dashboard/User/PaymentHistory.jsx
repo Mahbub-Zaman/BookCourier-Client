@@ -28,6 +28,7 @@ const PaymentHistory = () => {
 
   return (
     <div className="max-w-6xl mx-auto mt-10 p-4">
+      <title>BookCourier | My Payment History</title>
       <h2 className="text-3xl font-bold mb-6 text-center text-primary">
         Payment History
       </h2>

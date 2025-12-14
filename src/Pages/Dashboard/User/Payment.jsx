@@ -45,6 +45,7 @@ const Payment = () => {
 
   return (
     <div className="max-w-md mx-auto mt-10 bg-white shadow-lg p-5 rounded">
+      <title>BookCourier | Confirm Payment</title>
       <h2 className="text-2xl font-bold mb-5 text-center">Confirm Payment</h2>
 
       <img
