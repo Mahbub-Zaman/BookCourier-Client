@@ -1,0 +1,443 @@
+[
+  {
+    "bookName": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "image": "https://i.postimg.cc/BvFCHjB3/9780143454212.jpg",
+    "review": "'The Great Gatsby' by F. Scott Fitzgerald is a timeless masterpiece that delves into the decadence and disillusionment of the Jazz Age...",
+    "totalPages": 192,
+    "rating": 4.5,
+    "category": "Classic",
+    "tags": ["Fiction", "Romance"],
+    "publisher": "Scribner",
+    "yearOfPublishing": 1925,
+    "addedAt": "2025-12-10T12:00:00Z",
+    "price": 1999,
+    "librarianName":
+    "Alice Smith",
+    "librarianEmail":
+    "alice@example.com",
+    "librarianImage":
+    "https://i.ibb.co/YFyd5s81/pexels-qhung999-19274991.jpg",
+    "status":
+    "Available"
+  },
+  {
+    "bookName": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "image": "https://i.postimg.cc/c41T240f/81a-Y1lxk-9L-AC-UF1000-1000-QL80.jpg",
+    "review": "'To Kill a Mockingbird' explores themes of racial injustice and moral growth in the American South through the eyes of young Scout Finch...",
+    "totalPages": 281,
+    "rating": 4.8,
+    "category": "Classic",
+    "tags": ["Fiction", "Drama"],
+    "publisher": "J.B. Lippincott & Co.",
+    "yearOfPublishing": 1960,
+    "addedAt": "2025-12-10T12:00:00Z",
+    "price": 1999,
+"librarianName":
+"Bob Johnson",
+"librarianEmail":
+"bob@example.com",
+ "librarianImage":
+"https://i.ibb.co/gLDD7Q6M/pexels-kaleef-lawal-1481864847-27897903.jpg",
+"status":
+"Available"
+  },
+  {
+    "bookName": "1984",
+    "author": "George Orwell",
+    "image": "https://i.postimg.cc/jjnMcgtt/83cb389fea6e3d5df2f85d9bee2949fc.jpg",
+    "review": "'1984' is a dystopian novel that examines totalitarian regimes, surveillance, and the struggle for truth and individuality...",
+    "totalPages": 328,
+    "rating": 4.7,
+    "category": "Dystopian",
+    "tags": ["Fiction", "Political"],
+    "publisher": "Secker & Warburg",
+    "yearOfPublishing": 1949,
+    "addedAt": "2025-12-10T12:00:00Z",
+    "price": 1999,
+    "librarianName":
+"Charlie Brown",
+"librarianEmail":
+"charlie@example.com",
+ "librarianImage":
+"https://i.ibb.co/m5X9WCYK/pexels-sa-foysal-1893409-6409119.jpg",
+"status":
+"Available"
+  },
+  {
+    "bookName": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "image": "https://i.postimg.cc/JhS2WwPt/MV5BMTA1NDQ3NTcy-OTNe-QTJe-QWpw-Z15Bb-WU3MDA0Mz-A4Mz-E-V1-FMjpg-UX1000.jpg",
+    "review": "'Pride and Prejudice' portrays the social manners and romantic entanglements of early 19th-century England with wit and insight...",
+    "totalPages": 279,
+    "rating": 4.6,
+    "category": "Classic",
+    "tags": ["Fiction", "Romance"],
+    "publisher": "T. Egerton",
+    "yearOfPublishing": 1813,
+    "addedAt": "2025-12-10T12:00:00Z",
+    "price": 1999,
+"librarianName":
+"Diana Prince",
+"librarianEmail":
+"diana@example.com",
+ "librarianImage":
+"https://i.ibb.co/d4Cmmk69/pexels-trinitykubassek-445109.jpg",
+"status":
+"Available"
+  },
+  {
+    "bookName": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "image": "https://i.postimg.cc/85DLvtCv/5107.jpg",
+    "review": "'The Catcher in the Rye' follows Holden Caulfield as he navigates teenage angst, rebellion, and alienation in 1950s New York...",
+    "totalPages": 214,
+    "rating": 4.0,
+    "category": "Classic",
+    "tags": ["Fiction", "Young Adult"],
+    "publisher": "Little, Brown and Company",
+    "yearOfPublishing": 1951,
+    "addedAt": "2025-12-10T12:00:00Z",
+    "price": 1999,
+"librarianName":
+"Ethan Hunt",
+"librarianEmail":
+"ethan@example.com",
+ "librarianImage":
+"https://i.ibb.co/Xrx8gXhQ/pexels-ron-lach-9604304.jpg",
+"status":
+"Available"
+
+  },
+  {
+    "bookName": "Brave New World",
+    "author": "Aldous Huxley",
+    "image": "https://i.postimg.cc/dQNTQq8F/images-(12).jpg",
+    "review": "'Brave New World' envisions a futuristic society obsessed with technological control and the illusion of happiness, challenging notions of freedom...",
+    "totalPages": 311,
+    "rating": 4.3,
+    "category": "Dystopian",
+    "tags": ["Fiction", "Science Fiction"],
+    "publisher": "Chatto & Windus",
+    "yearOfPublishing": 1932,
+    "addedAt": "2025-12-10T12:00:00Z",
+    "price": 1999,
+    "librarianName":
+"Fiona Gallagher",
+"librarianEmail":
+"fiona@example.com",
+ "librarianImage":
+"https://i.ibb.co/gLF14h9x/pexels-jeff-denlea-721292-3021538.jpg",
+"status":
+"Available"
+  },
+  {
+    "bookName": "Moby-Dick",
+    "author": "Herman Melville",
+    "image": "https://i.postimg.cc/Dwk0mm0p/9789895621606.webp",
+    "review": "'Moby-Dick' is the epic tale of Captain Ahab's obsessive quest for the white whale, exploring humanity, obsession, and fate...",
+    "totalPages": 585,
+    "rating": 4.2,
+    "category": "Classic",
+    "tags": ["Fiction", "Adventure"],
+    "publisher": "Harper & Brothers",
+    "yearOfPublishing": 1851,
+    "addedAt": "2025-12-10T12:00:00Z",
+    "price": 1999,
+"librarianName":
+"George Martin",
+"librarianEmail":
+"george@example.com",
+ "librarianImage":
+"https://i.ibb.co/ymzx0mL5/pexels-artisticakshay-3649765.jpg",
+"status":
+"Available"
+  },
+  {
+    "bookName": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "image": "https://i.postimg.cc/N0NryYW9/71j-D4j-Mity-L-AC-UF1000-1000-QL80.jpg",
+    "review": "'The Hobbit' follows Bilbo Baggins on an unexpected adventure filled with dwarves, dragons, and the discovery of courage and friendship...",
+    "totalPages": 310,
+    "rating": 4.7,
+    "category": "Fantasy",
+    "tags": ["Fiction", "Adventure"],
+    "publisher": "George Allen & Unwin",
+    "yearOfPublishing": 1937,
+    "addedAt": "2025-12-10T12:00:00Z",
+    "price": 1999,
+"librarianName":
+"Hannah Lee",
+"librarianEmail":
+"hannah@example.com",
+ "librarianImage":
+"https://i.ibb.co/CspHPBd2/pexels-rachel-valdes-martinez-893138605-1998…",
+"status":
+"Available"
+  },
+  {
+    "bookName": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "image": "https://i.postimg.cc/xCw8Hdg9/91z-U70Aw9IS-AC-UF1000-1000-QL80.jpg",
+    "review": "'Jane Eyre' traces the life of a resilient young woman facing social criticism, moral dilemmas, and love, in Victorian England...",
+    "totalPages": 507,
+    "rating": 4.5,
+    "category": "Classic",
+    "tags": ["Fiction", "Romance"],
+    "publisher": "Smith, Elder & Co.",
+    "yearOfPublishing": 1847,
+    "addedAt": "2025-12-10T12:00:00Z",
+    "price": 1999,
+"librarianName":
+"Ian Somerhalder",
+"librarianEmail":
+"ian@example.com",
+ "librarianImage":
+"https://i.ibb.co/84gyqKdv/pexels-smooth-models-2150787216-31799256.jpg",
+"status":
+"Available"
+  },
+  {
+    "bookName": "The Lord of the Rings: The Fellowship of the Ring",
+    "author": "J.R.R. Tolkien",
+    "image": "https://i.postimg.cc/ZnPbdxC9/MV5BMGQx-MDdi-OWUt-Yjc1Ni00Yz-M1LWE2Nj-Mt-ZTg3Y2Jk-Mj-Ez-MTJj-Xk-Ey-Xk-Fqc-Gc-V1.jpg",
+    "review": "'The Fellowship of the Ring' begins the epic journey of Frodo Baggins as he embarks to destroy the One Ring and confront evil...",
+    "totalPages": 423,
+    "rating": 4.9,
+    "category": "Fantasy",
+    "tags": ["Fiction", "Adventure"],
+    "publisher": "George Allen & Unwin",
+    "yearOfPublishing": 1954,
+    "addedAt": "2025-12-10T12:00:00Z",
+    "price": 1999,
+"librarianName":
+"Julia Roberts",
+"librarianEmail":
+"julia@example.com",
+ "librarianImage":
+"https://i.ibb.co/8nWWP8PY/pexels-karola-g-8107287.jpg",
+"status":
+"Available"
+  },
+  {
+    "bookName": "Animal Farm",
+    "author": "George Orwell",
+    "image": "https://i.postimg.cc/BQQ9p0zz/animal-farm-isbn-9781839642395-0.jpg",
+    "review": "'Animal Farm' is a satirical allegory that critiques power, corruption, and social injustice through a farm run by animals...",
+    "totalPages": 112,
+    "rating": 4.4,
+    "category": "Political Satire",
+    "tags": ["Fiction", "Dystopian"],
+    "publisher": "Secker & Warburg",
+    "yearOfPublishing": 1945,
+    "addedAt": "2025-12-10T12:00:00Z",
+    "price": 1999,
+"librarianName":
+"Kevin Hart",
+"librarianEmail":
+"kevin@example.com",
+ "librarianImage":
+"https://i.ibb.co/xthW2Q0f/pexels-guillermo-berlin-1524368912-28893324.…",
+"status":
+"Available"
+  },
+  {
+    "bookName": "The Odyssey",
+    "author": "Homer",
+    "image": "https://i.postimg.cc/BQvkDCLQ/The-Odyssey.jpg",
+    "review": "'The Odyssey' recounts Odysseus' perilous journey home from the Trojan War, filled with myth, adventure, and heroism...",
+    "totalPages": 541,
+    "rating": 4.6,
+    "category": "Classic",
+    "tags": ["Epic", "Adventure"],
+    "publisher": "Penguin Classics",
+    "yearOfPublishing": -800,
+    "addedAt": "2025-12-10T12:00:00Z",
+    "price": 1999,
+"librarianName":
+"Laura Palmer",
+"librarianEmail":
+"laura@example.com",
+ "librarianImage":
+"https://i.ibb.co/fzpGDRbf/pexels-jeff-denlea-721292-3021563.jpg",
+"status":
+"Available"
+  },
+  {
+    "bookName": "Wuthering Heights",
+    "author": "Emily Brontë",
+    "image": "https://i.postimg.cc/9MWJ2Wy3/9780571337118.jpg",
+    "review": "'Wuthering Heights' explores passionate love, revenge, and social class through the stormy relationship of Catherine and Heathcliff...",
+    "totalPages": 416,
+    "rating": 4.3,
+    "category": "Classic",
+    "tags": ["Fiction", "Romance"],
+    "publisher": "Thomas Cautley Newby",
+    "yearOfPublishing": 1847,
+    "addedAt": "2025-12-10T12:00:00Z",
+    "price": 1999,
+"librarianName":
+"Mark Ruffalo",
+"librarianEmail":
+"mark@example.com",
+ "librarianImage":
+"https://i.ibb.co/fYB83366/pexels-nkhajotia-1486064.jpg",
+"status":
+"Available"
+  },
+  {
+    "bookName": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "image": "https://i.postimg.cc/C59GRYnH/23398716.jpg",
+    "review": "'Crime and Punishment' examines morality, guilt, and redemption through the story of Raskolnikov, a young man who commits a murder...",
+    "totalPages": 671,
+    "rating": 4.7,
+    "category": "Classic",
+    "tags": ["Fiction", "Psychological"],
+    "publisher": "The Russian Messenger",
+    "yearOfPublishing": 1866,
+    "addedAt": "2025-12-10T12:00:00Z",
+    "price": 1999,
+"librarianName":
+"Nina Dobrev",
+"librarianEmail":
+"nina@example.com",
+ "librarianImage":
+"https://i.ibb.co/HT1JYLTZ/pexels-guillermo-berlin-1524368912-28686631.…",
+"status":
+"Available"
+  },
+  {
+    "bookName": "Frankenstein",
+    "author": "Mary Shelley",
+    "image": "https://i.postimg.cc/FFYnHH2d/35031085.jpg",
+    "review": "'Frankenstein' tells the story of Victor Frankenstein and his creation, delving into themes of ambition, humanity, and ethics...",
+    "totalPages": 280,
+    "rating": 4.2,
+    "category": "Classic",
+    "tags": ["Fiction", "Horror"],
+    "publisher": "Lackington, Hughes, Harding, Mavor & Jones",
+    "yearOfPublishing": 1818,
+    "addedAt": "2025-12-10T12:00:00Z",
+    "price": 1999,
+"librarianName":
+"Oscar Isaac",
+"librarianEmail":
+"oscar@example.com",
+ "librarianImage":
+"https://i.ibb.co/BVWzJBYC/pexels-guillermo-berlin-1524368912-28902333.…",
+"status":
+"Available"
+  },
+  {
+    "bookName": "The Alchemist",
+    "author": "Paulo Coelho",
+    "image": "https://i.postimg.cc/Bn4gHSwx/The-Alchemist-cover.jpg",
+    "review": "'The Alchemist' is an inspiring tale of a young shepherd pursuing his personal legend, filled with wisdom, dreams, and adventure...",
+    "totalPages": 208,
+    "rating": 4.7,
+    "category": "Fiction",
+    "tags": ["Adventure", "Philosophy"],
+    "publisher": "HarperCollins",
+    "yearOfPublishing": 1988,
+    "addedAt": "2025-12-10T12:00:00Z",
+    "price": 1999,
+"librarianName":
+"Paula Abdul",
+"librarianEmail":
+"paula@example.com",
+ "librarianImage":
+"https://i.ibb.co/wZ2njmhF/pexels-nishantaneja-7432343.jpg",
+"status":
+"Available"
+  },
+  {
+    "bookName": "The Kite Runner",
+    "author": "Khaled Hosseini",
+    "image": "https://i.postimg.cc/hPb8DFPn/c0e192e5c-53062.jpg",
+    "review": "'The Kite Runner' is a moving story of friendship, betrayal, and redemption set against the backdrop of Afghanistan's turbulent history...",
+    "totalPages": 371,
+    "rating": 4.6,
+    "category": "Fiction",
+    "tags": ["Drama", "Historical"],
+    "publisher": "Riverhead Books",
+    "yearOfPublishing": 2003,
+    "addedAt": "2025-12-10T12:00:00Z",
+    "price": 1999,
+"librarianName":
+"Quentin Tarantino",
+"librarianEmail":
+"quentin@example.com",
+ "librarianImage":
+"https://i.ibb.co/mwt9Yyg/pexels-hudsonmarquesfotografia-3366753.jpg",
+"status":
+"Available"
+  },
+  {
+    "bookName": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "image": "https://i.postimg.cc/vZZnGcNv/622708F6-78D7-453A-A7C5-3FE6853F3167-IMG400.jpg",
+    "review": "'Harry Potter and the Sorcerer's Stone' introduces readers to the magical world of Hogwarts and the adventures of a young wizard named Harry Potter...",
+    "totalPages": 309,
+    "rating": 4.9,
+    "category": "Fantasy",
+    "tags": ["Fiction", "Adventure"],
+    "publisher": "Bloomsbury",
+    "yearOfPublishing": 1997,
+    "addedAt": "2025-12-10T12:00:00Z",
+    "price": 1999,
+"librarianName":
+"Rachel Green",
+"librarianEmail":
+"rachel@example.com",
+ "librarianImage":
+"https://i.ibb.co/7djbgDzj/pexels-marcelochagas-1937434.jpg",
+"status":
+"Available"
+  },
+  {
+    "bookName": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+    "author": "C.S. Lewis",
+    "image": "https://i.postimg.cc/C1Tdn1mQ/013BAF38-54D2-4271-A71D-EFD85F4BE53C-IMG400.jpg",
+    "review": "'The Lion, the Witch and the Wardrobe' tells the story of four siblings discovering the magical land of Narnia and their battle against evil forces...",
+    "totalPages": 208,
+    "rating": 4.8,
+    "category": "Fantasy",
+    "tags": ["Fiction", "Adventure"],
+    "publisher": "Geoffrey Bles",
+    "yearOfPublishing": 1950,
+    "addedAt": "2025-12-10T12:00:00Z",
+    "price": 1999,
+    "librarianName":
+"Steve Rogers",
+"librarianEmail":
+"steve@example.com",
+ "librarianImage":
+"https://i.ibb.co/hJt1XFQ8/pexels-imadseyes-11296248.jpg",
+"status":
+"Available"
+  },
+  {
+    "bookName": "The Little Prince",
+    "author": "Antoine de Saint-Exupéry",
+    "image": "https://i.postimg.cc/g0R2ppGk/716v-Af-GCVa-L-UF1000-1000-QL80.jpg",
+    "review": "'The Little Prince' is a poetic tale about love, friendship, and the wisdom of childhood, as seen through the journey of a young prince visiting different planets...",
+    "totalPages": 96,
+    "rating": 4.9,
+    "category": "Fiction",
+    "tags": ["Philosophy", "Children"],
+    "publisher": "Reynal & Hitchcock",
+    "yearOfPublishing": 1943,
+    "addedAt": "2025-12-10T12:00:00Z",
+    "price": 1999,
+"librarianName":
+"Tony Stark",
+"librarianEmail":
+"tony@example.com",
+ "librarianImage":
+"https://i.ibb.co/j96TH9Yr/pexels-introspectivedsgn-4061512.jpg",
+"status":
+"Available"
+  }
+]

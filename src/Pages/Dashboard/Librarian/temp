@@ -1,0 +1,182 @@
+import React, { useState } from "react";
+import useAxios from "../../../hooks/useAxios";
+import toast, { Toaster } from "react-hot-toast";
+
+const AddBook = () => {
+  const axios = useAxios();
+
+  const [bookName, setBookName] = useState("");
+  const [author, setAuthor] = useState("");
+  const [status, setStatus] = useState("publish");
+  const [price, setPrice] = useState("");
+  const [imageUrl, setImageUrl] = useState("");
+  const [category, setCategory] = useState("");
+  const [publisher, setPublisher] = useState("");
+  const [yearOfPublishing, setYearOfPublishing] = useState("");
+  const [totalPages, setTotalPages] = useState("");
+  const [review, setReview] = useState("");
+
+  const handleAddBook = async (e) => {
+    e.preventDefault();
+
+    // basic validation
+    if (!bookName || !author || !price) {
+      toast.error("Please fill book title, author and price.");
+      return;
+    }
+
+    const newBook = {
+      bookName,
+      author,
+      status,
+      price: parseFloat(price),
+      image: imageUrl,
+      category,
+      publisher,
+      yearOfPublishing,
+      totalPages,
+      review,
+      addedAt: new Date().toISOString(),
+    };
+
+    try {
+      const res = await axios.post("/books", newBook);
+      toast.success("Book added successfully!");
+      // reset form
+      setBookName("");
+      setAuthor("");
+      setStatus("publish");
+      setPrice("");
+      setImageUrl("");
+      setCategory("");
+      setPublisher("");
+      setYearOfPublishing("");
+      setTotalPages("");
+      setReview("");
+    } catch (err) {
+      console.error(err);
+      toast.error("Failed to add book.");
+    }
+  };
+
+  return (
+    <div className="max-w-xl mx-auto p-6 bg-white rounded shadow-md mt-8">
+      <Toaster position="top-right" />
+      <h2 className="text-2xl font-bold mb-6">Add New Book</h2>
+      <form onSubmit={handleAddBook} className="grid grid-cols-1 gap-4">
+        <label className="flex flex-col">
+          Book Title
+          <input
+            type="text"
+            value={bookName}
+            onChange={(e) => setBookName(e.target.value)}
+            className="input input-bordered mt-1"
+            required
+          />
+        </label>
+
+        <label className="flex flex-col">
+          Author
+          <input
+            type="text"
+            value={author}
+            onChange={(e) => setAuthor(e.target.value)}
+            className="input input-bordered mt-1"
+            required
+          />
+        </label>
+
+        <label className="flex flex-col">
+          Status
+          <select
+            value={status}
+            onChange={(e) => setStatus(e.target.value)}
+            className="select select-bordered mt-1"
+          >
+            <option value="publish">Publish</option>
+            <option value="unpublish">Unpublish</option>
+          </select>
+        </label>
+
+        <label className="flex flex-col">
+          Price
+          <input
+            type="number"
+            step="0.01"
+            value={price}
+            onChange={(e) => setPrice(e.target.value)}
+            className="input input-bordered mt-1"
+            required
+          />
+        </label>
+
+        <label className="flex flex-col">
+          Image URL
+          <input
+            type="text"
+            value={imageUrl}
+            onChange={(e) => setImageUrl(e.target.value)}
+            className="input input-bordered mt-1"
+            placeholder="http://example.com/image.jpg"
+          />
+        </label>
+
+        <label className="flex flex-col">
+          Category
+          <input
+            type="text"
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+            className="input input-bordered mt-1"
+          />
+        </label>
+
+        <label className="flex flex-col">
+          Publisher
+          <input
+            type="text"
+            value={publisher}
+            onChange={(e) => setPublisher(e.target.value)}
+            className="input input-bordered mt-1"
+          />
+        </label>
+
+        <label className="flex flex-col">
+          Year of Publishing
+          <input
+            type="number"
+            value={yearOfPublishing}
+            onChange={(e) => setYearOfPublishing(e.target.value)}
+            className="input input-bordered mt-1"
+          />
+        </label>
+
+        <label className="flex flex-col">
+          Total Pages
+          <input
+            type="number"
+            value={totalPages}
+            onChange={(e) => setTotalPages(e.target.value)}
+            className="input input-bordered mt-1"
+          />
+        </label>
+
+        <label className="flex flex-col">
+          Review / Description
+          <textarea
+            value={review}
+            onChange={(e) => setReview(e.target.value)}
+            className="textarea textarea-bordered mt-1"
+            rows={4}
+          />
+        </label>
+
+        <button type="submit" className="btn btn-primary mt-4">
+          Add Book
+        </button>
+      </form>
+    </div>
+  );
+};
+
+export default AddBook;
