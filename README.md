@@ -121,8 +121,14 @@ Navigate to http://localhost:5173 (or the port specified in your setup) to acces
 
 ## 📌 Future Improvements
 
-* Add **AI chatbot** 
-<!-- * Add **dark mode UI**  
-* Enable **booking and scheduling** features   -->
-* Implement **google map** 
+* 👁️ Admin will be able to **view each user's profile** for management purposes  
+* 🤖 Add **AI Chatbot** to assist users in finding books and answering queries  
+* 🌙 Improve **Dark Mode UI** for a better user experience  
+* 🏛️ Enable **Librarian Registration Process** to manage library access  
+* 📦 Track **Book Quantity** for inventory management  
+* 🔍 Add **Filtering Options** by price, category, tags, or author  
+* 📝 Allow **Review Deletion or Hiding by Admin** for moderation  
+* 🎨 More **UI Upgrades** for a modern and intuitive interface  
+* 🗺️ Integrate **Google Maps** to show nearby libraries and delivery routes  
+
 
