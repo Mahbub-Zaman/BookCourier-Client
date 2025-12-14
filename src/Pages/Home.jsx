@@ -9,6 +9,7 @@ import LatestBooks from "../components/Home/LatestBooks";
 
 const Home = () => (
   <div>
+    <title>BookCourier | Home</title>
     <HeroSlider />
     
     <div className="whitebg py-12">
