@@ -28,6 +28,7 @@ const Transactions = () => {
 
   return (
 <div className="max-w-7xl mx-auto mt-10 p-4">
+  <title>BookCourier | All Transictions</title>
   <h2 className="text-3xl font-bold mb-6 text-center text-primary">All Transactions</h2>
   <div className="overflow-x-auto shadow-lg rounded-lg border border-gray-200">
     <table className="min-w-full divide-y divide-gray-200">
