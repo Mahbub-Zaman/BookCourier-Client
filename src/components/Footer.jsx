@@ -19,10 +19,10 @@ const Footer = () => {
                 {/* Services */}
                 <nav>
                     <h6 className="footer-title">Services</h6>
-                    <a className="link link-hover">Available Food</a>
-                    <a className="link link-hover">Request Food</a>
-                    <a className="link link-hover">Manage My Food</a>
-                    <a className="link link-hover">Serve Food</a>
+                    <a className="link link-hover">Available Books</a>
+                    <a className="link link-hover">Browse Book</a>
+                    <a className="link link-hover">Order Book</a>
+                    <a className="link link-hover">Nearby Library</a>
                 </nav>
 
                 {/* Legal */}
@@ -38,15 +38,15 @@ const Footer = () => {
                     <h6 className="footer-title">Connect & Contact</h6>
                     <div className="flex flex-col">
                         <div className="mt-0 text-sm">
-                            <p>Email: info@skillswap.com</p>
-                            <p>Phone: +880 123 456 789</p>
+                            <p>Email: mahbub.devx@gmail.com</p>
+                            <p>Phone: +8801739670124</p>
                         </div>
                         <div className="flex space-x-4 text-xl mt-4">
                             {/* Social icons with hover brand colors */}
-                            <a href="#" className="transition-colors duration-300 hover:text-[#1877F2]"><FaFacebookF /></a>
-                            <a href="#" className="transition-colors duration-300 hover:text-[#08629b]"><FaXTwitter /></a>
-                            <a href="#" className="transition-colors duration-300 hover:text-[#C13584]"><FaInstagram /></a>
-                            <a href="#" className="transition-colors duration-300 hover:text-[#0A66C2]"><FaLinkedinIn /></a>
+                            <a href="https://www.facebook.com/IamMahbubZaman" className="transition-colors duration-300 hover:text-[#1877F2]"><FaFacebookF /></a>
+                            <a href="https://x.com/mahbub_zaman_" className="transition-colors duration-300 hover:text-[#08629b]"><FaXTwitter /></a>
+                            <a href="https://www.instagram.com/md_mahbub_zaman/" className="transition-colors duration-300 hover:text-[#C13584]"><FaInstagram /></a>
+                            <a href="https://www.linkedin.com/in/md-mahbub-zaman/" className="transition-colors duration-300 hover:text-[#0A66C2]"><FaLinkedinIn /></a>
                         </div>
                     </div>
                 </nav>
