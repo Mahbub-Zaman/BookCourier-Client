@@ -7,28 +7,28 @@
   default: true;
 
   /* Custom colors */
-  --color-primary: #22c122;       /* green */
-  --color-secondary: #374151;     /* gray (secondary background) */
-  --color-bg: #ffffff;            /* primary background */
+  --color-primary: #22c122;
+  --color-secondary: #374151;
+  --color-bg: #ffffff;
   --color-whitebg: #f9fafb;
   --color-bg-2: #e5e7eb;
   --color-blacktext: #000000;
-  --color-text: #424242;          /* main text */
-  --color-heading: #292922;       /* headings */
-  --color-accent: #facc15;        /* accent, e.g., buttons */
+  --color-text: #424242;
+  --color-heading: #292922;
+  --color-accent: #facc15;
 }
 @plugin "daisyui/theme" {
   name: "dark";
 
-  --color-primary: #0CF58D;       /* lighter green */
-  --color-secondary: #ffffff;     /* dark gray */
-  --color-bg: #121212;            /* main dark background */
+  --color-primary: #0CF58D;
+  --color-secondary: #ffffff;
+  --color-bg: #121212;
   --color-whitebg: #6b7280;
   --color-bg-2: #374151;
-  --color-blacktext: #42C742;      /* dark text for readability */
-  --color-text: #4d4d4d;          /* light text for readability */
-  --color-heading: #e4e4e4;       /* heading text */
-  --color-accent: #f472b6;        /* accent, e.g., buttons */
+  --color-blacktext: #42C742;
+  --color-text: #4d4d4d;
+  --color-heading: #e4e4e4;
+  --color-accent: #f472b6;
 }
 
 /* Light theme */
@@ -59,15 +59,13 @@
 
 /* Light theme */
 [data-theme="light"] .border-b-theme {
-  border-bottom: 1px solid rgb(209, 207, 206); /* or var(--color-blacktext) */
+  border-bottom: 1px solid rgb(209, 207, 206);
 }
 
 /* Dark theme */
 [data-theme="dark"] .border-b-theme {
-  border-bottom: 1px solid #6c7480; /* Tailwind gray-700 hex */
+  border-bottom: 1px solid #6c7480; 
 }
-
-
 
 /* Purple color: text-purple-600 */
 
