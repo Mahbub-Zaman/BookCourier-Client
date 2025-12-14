@@ -6,7 +6,7 @@
 
 ## 📷 Screenshot
 
-![Book Preview](https://i.ibb.co.com/YFJgJ3fM/localhost-5173-1.png)
+![HomePage Preview](https://i.postimg.cc/PrVtTW0z/Book-Courier.png)
 
 ---
 
