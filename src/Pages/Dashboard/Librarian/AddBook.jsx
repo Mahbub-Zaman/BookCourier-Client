@@ -92,7 +92,7 @@ const AddBook = () => {
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-gray-200">
-      <title>Library | Add Book</title>
+      <title>BookCourier | Add Book</title>
       <Toaster position="top-right" />
 
       <h1 className="text-4xl font-bold mb-6 text-primary">Add Book</h1>

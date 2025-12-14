@@ -64,6 +64,7 @@ const EditBook = () => {
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-gray-50 p-6">
+      <title>BookCourier | Edit Book</title>
       <Toaster position="top-right" />
       <h1 className="text-3xl font-bold mb-6 text-primary">Edit Book</h1>
 

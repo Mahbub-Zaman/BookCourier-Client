@@ -82,6 +82,7 @@ const Orders = () => {
 
   return (
     <div className="p-6 mx-auto max-w-6xl">
+      <title>BookCourier | All Orders</title>
       <Toaster position="top-right" />
       <h2 className="text-3xl text-primary font-bold mb-6">All Orders</h2>
 
