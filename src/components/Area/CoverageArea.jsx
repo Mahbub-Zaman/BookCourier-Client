@@ -50,6 +50,7 @@ const CoverageArea = () => {
 
     return (
         <div className="p-4">
+            <title>BookCourier | Libraries Around You</title>
             {/* Header */}
             <div className="text-center mb-10">
                 {/* text-green-500 */}
