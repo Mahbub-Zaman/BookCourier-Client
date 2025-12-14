@@ -3,6 +3,7 @@ import React from "react";
 const DashboardHome = () => {
   return (
     <div className="min-h-screen bg-base-200 flex items-center justify-center px-4 md:px-6 py-10">
+      <title>BookCourier | DashBoard</title>
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
         {/* Right Image Section (MOBILE FIRST) */}
