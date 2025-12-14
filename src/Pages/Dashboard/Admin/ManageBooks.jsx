@@ -62,6 +62,7 @@ const ManageBooks = () => {
 
   return (
     <div className="min-h-screen p-6 bg-gray-50">
+      <title>BookCourier | Library Collection</title>
       <Toaster position="top-right" />
       <h1 className="text-3xl font-bold mb-6 text-primary">Manage Books</h1>
 
