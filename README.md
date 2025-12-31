@@ -12,7 +12,7 @@
 
 ## 🔗 Live Demo
 
-🚀 [Click Here to Explore BookCourier](#)
+🚀 [Click Here to Explore BookCourier](https://bookcourier-ba441.web.app/)
 
 ---
 ## 📲 App Features
@@ -85,7 +85,7 @@
 
 ## 💻 Installation & Setup
 
-Follow these steps to run the PlateShare project locally:
+Follow these steps to run the BookCourier project locally:
 
 1. **Clone the repository:**  
 ```bash
