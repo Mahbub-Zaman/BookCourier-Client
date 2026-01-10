@@ -5,7 +5,7 @@ import useAxios from "../../../hooks/useAxios";
 import toast, { Toaster } from "react-hot-toast";
 
 const AddBook = () => {
-  const { user } = useAuth(); // logged in firebase user
+  const { user } = useAuth();
   const navigate = useNavigate();
   const axios = useAxios();
 
@@ -22,21 +22,19 @@ const AddBook = () => {
   const [review, setReview] = useState("");
   const [loading, setLoading] = useState(false);
 
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // must be logged in
     if (!user) return toast.error("You must be logged in to add books.");
-
-    // validations
     if (!bookName.trim()) return toast.error("Book name required.");
     if (!author.trim()) return toast.error("Author name required.");
     if (!price.trim()) return toast.error("Price required.");
     if (!imageUrl.trim()) return toast.error("Image URL required.");
 
-    // optional ImgBB validation like AddFood
-    if (!imageUrl.includes("https://i.ibb.co/") && !imageUrl.includes("https://ibb.co/")) {
+    if (
+      !imageUrl.includes("https://i.ibb.co/") &&
+      !imageUrl.includes("https://ibb.co/")
+    ) {
       return toast.error("Image must be hosted on ImgBB!");
     }
 
@@ -61,149 +59,173 @@ const AddBook = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post("/books", bookData);
-      console.log("MongoDB Response:", res.data);
-
+      await axios.post("/books", bookData);
       toast.success("📚 Book added successfully!");
-      setLoading(false);
 
-      // reset
-      setBookName("");
-      setAuthor("");
-      setStatus("publish");
-      setPrice("");
-      setImageUrl("");
-      setCategory("");
-      setPublisher("");
-      setYearOfPublishing("");
-      setTotalPages("");
-      setReview("");
-
-      // redirect
       setTimeout(() => navigate("/dashboard"), 1500);
-
-    } catch (e) {
-      console.error(e);
+    } catch (err) {
+      console.error(err);
       toast.error("Failed to add book.");
+    } finally {
       setLoading(false);
     }
   };
 
-
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-200">
+    <div className="min-h-screen whitebg py-10 px-4">
       <title>BookCourier | Add Book</title>
       <Toaster position="top-right" />
 
-      <h1 className="text-4xl font-bold mb-6 text-primary">Add Book</h1>
-
-      <form
-        onSubmit={handleSubmit}
-        className="bg-white shadow-md rounded-lg p-8 w-96 flex flex-col gap-4"
-      >
-
-        <input
-          type="text"
-          placeholder="Book Name"
-          value={bookName}
-          onChange={(e) => setBookName(e.target.value)}
-          className="input"
+      {/* Header */}
+      <div className="max-w-5xl mx-auto mb-8 flex items-center gap-4">
+        <img
+          src="/add-book.png"
+          alt="Add Book"
+          className="w-12 h-12"
         />
+        <h1 className="text-3xl font-bold text-primary">Add New Book</h1>
+      </div>
 
-        <input
-          type="text"
-          placeholder="Author Name"
-          value={author}
-          onChange={(e) => setAuthor(e.target.value)}
-          className="input"
-        />
-
-        <div className="flex gap-2">
-          <label htmlFor="status" className="text-primary font-medium">Select Status:</label>
-        <select
-          value={status}
-          onChange={(e) => setStatus(e.target.value)}
-          className="select"
+      {/* Form Card */}
+      <div className="max-w-5xl mx-auto graybg rounded-2xl shadow-lg p-8">
+        <form
+          onSubmit={handleSubmit}
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
         >
-          <option value="publish">Publish</option>
-          <option value="unpublish">Unpublish</option>
-        </select>
-        </div>
+          {/* Left Column */}
+          <div className="space-y-4">
+            <div>
+              <label className="label">Book Name *</label>
+              <input
+                type="text"
+                value={bookName}
+                onChange={(e) => setBookName(e.target.value)}
+                className="input w-full"
+              />
+            </div>
 
-        <input
-          type="number"
-          placeholder="Price (e.g., 250)"
-          value={price}
-          onChange={(e) => setPrice(e.target.value)}
-          className="input"
-        />
+            <div>
+              <label className="label">Author *</label>
+              <input
+                type="text"
+                value={author}
+                onChange={(e) => setAuthor(e.target.value)}
+                className="input w-full"
+              />
+            </div>
 
-        <input
-          type="url"
-          placeholder="Book Image URL (ImgBB)"
-          value={imageUrl}
-          onChange={(e) => setImageUrl(e.target.value)}
-          className="input"
-        />
+            <div>
+              <label className="label">Price *</label>
+              <input
+                type="number"
+                value={price}
+                onChange={(e) => setPrice(e.target.value)}
+                className="input w-full"
+              />
+            </div>
 
-        <input
-          type="text"
-          placeholder="Category (optional)"
-          value={category}
-          onChange={(e) => setCategory(e.target.value)}
-          className="input"
-        />
+            <div>
+              <label className="label">Image URL (ImgBB) *</label>
+              <input
+                type="url"
+                value={imageUrl}
+                onChange={(e) => setImageUrl(e.target.value)}
+                className="input w-full"
+              />
+            </div>
 
-        <input
-          type="text"
-          placeholder="Publisher (optional)"
-          value={publisher}
-          onChange={(e) => setPublisher(e.target.value)}
-          className="input"
-        />
+            <div>
+              <label className="label">Status</label>
+              <select
+                value={status}
+                onChange={(e) => setStatus(e.target.value)}
+                className="select w-full"
+              >
+                <option value="publish">Publish</option>
+                <option value="unpublish">Unpublish</option>
+              </select>
+            </div>
+          </div>
 
-        <input
-          type="number"
-          placeholder="Year of Publishing"
-          value={yearOfPublishing}
-          onChange={(e) => setYearOfPublishing(e.target.value)}
-          className="input"
-        />
+          {/* Right Column */}
+          <div className="space-y-4">
+            <div>
+              <label className="label">Category</label>
+              <input
+                type="text"
+                value={category}
+                onChange={(e) => setCategory(e.target.value)}
+                className="input w-full"
+              />
+            </div>
 
-        <input
-          type="number"
-          placeholder="Total Pages"
-          value={totalPages}
-          onChange={(e) => setTotalPages(e.target.value)}
-          className="input"
-        />
+            <div>
+              <label className="label">Publisher</label>
+              <input
+                type="text"
+                value={publisher}
+                onChange={(e) => setPublisher(e.target.value)}
+                className="input w-full"
+              />
+            </div>
 
-        <input
-  type="number"
-  placeholder="Ratings (e.g., 4.5)"
-  value={ratings}
-  onChange={(e) => setRatings(e.target.value)}
-  min="0"
-  max="5"
-  step="0.1"
-  className="input"
-/>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label className="label">Year</label>
+                <input
+                  type="number"
+                  value={yearOfPublishing}
+                  onChange={(e) => setYearOfPublishing(e.target.value)}
+                  className="input w-full"
+                />
+              </div>
 
-        <textarea
-          placeholder="Review / Description"
-          value={review}
-          onChange={(e) => setReview(e.target.value)}
-          className="textarea"
-        />
+              <div>
+                <label className="label">Pages</label>
+                <input
+                  type="number"
+                  value={totalPages}
+                  onChange={(e) => setTotalPages(e.target.value)}
+                  className="input w-full"
+                />
+              </div>
+            </div>
 
-        <button
-          type="submit"
-          disabled={loading}
-          className={`btn ${loading ? "btn-disabled" : "btn-primary"}`}
-        >
-          {loading ? "Adding..." : "Add Book"}
-        </button>
-      </form>
+            <div>
+              <label className="label">Rating</label>
+              <input
+                type="number"
+                value={ratings}
+                onChange={(e) => setRatings(e.target.value)}
+                min="0"
+                max="5"
+                step="0.1"
+                className="input w-full"
+              />
+            </div>
+
+            <div>
+              <label className="label">Review</label>
+              <textarea
+                value={review}
+                onChange={(e) => setReview(e.target.value)}
+                className="textarea w-full h-28"
+              />
+            </div>
+          </div>
+
+          {/* Submit */}
+          <div className="md:col-span-2">
+            <button
+              type="submit"
+              disabled={loading}
+              className="btn btn-primary w-full text-lg"
+            >
+              {loading ? "Adding Book..." : "Add Book"}
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

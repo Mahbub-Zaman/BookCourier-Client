@@ -41,11 +41,15 @@ const NavBar = () => {
       <li><NavLink to="/coverage" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-gray-700"}>Coverage</NavLink></li>
       {user && <li><NavLink to="/dashboard" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-gray-700"}>Dashboard</NavLink></li>}
       <li><NavLink to="/faq" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-gray-700"}>FAQ</NavLink></li>
+      <li><NavLink to="/contact" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-gray-700"}>Contact</NavLink></li>
+      <li><NavLink to="/terms" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-gray-700"}>Terms</NavLink></li>
+      <li><NavLink to="/privacy" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-gray-700"}>privacy</NavLink></li>
     </>
   );
 
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    // bg-base-100 is also good color
+    <div className="navbar whitebg shadow-sm">
       {/* Left - Logo and Mobile Menu */}
       <div className="navbar-start">
         <div className="dropdown">
@@ -120,8 +124,8 @@ const NavBar = () => {
                 </li>
                 <div className="divider my-0"></div>
                 <li><NavLink to="/dashboard"><AiTwotoneDashboard />Dashboard</NavLink></li>
-                <li><NavLink to="/profile"><CgProfile />My Profile</NavLink></li>
-                <li><NavLink to="/update-profile"><LiaUserEditSolid />Update Profile</NavLink></li>
+                <li><NavLink to="/dashboard/profile"><CgProfile />My Profile</NavLink></li>
+                <li><NavLink to="/dashboard/update-profile"><LiaUserEditSolid />Update Profile</NavLink></li>
                 <div className="divider my-0"></div>
                 <button onClick={handleLogout} className="btn btn-error btn-sm mt-1 ml-2 h-8 w-auto text-[15px] px-4 flex items-center gap-2">
                   <FiLogOut /> Logout

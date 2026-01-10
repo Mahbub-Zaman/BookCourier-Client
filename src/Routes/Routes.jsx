@@ -35,6 +35,11 @@ import DashboardLayout from "../Layouts/DashboardLayout";
 import PrivateRoute from "../Routes/PrivateRoute";
 import AdminRoute from "./AdminRoute";
 import LibrarianRoute from "./LibrarianRoute";
+import About from "../Pages/Public/About";
+import Contact from "../Pages/Public/Contact";
+import TermsOfUse from "../Pages/Public/TermsOfUse";
+import PrivacyPolicy from "../Pages/Public/PrivacyPolicy";
+import Analytics from "../Pages/Dashboard/Admin/Analytics";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +61,10 @@ const router = createBrowserRouter([
       { path: "books", element: <AllBooks /> },
       { path: "coverage", element: <CoverageArea /> },
       { path: "faq", element: <FAQPage /> },
+      { path: "about", element: <About />},
+      { path: "contact", element: <Contact />},
+      { path: "terms", element: <TermsOfUse />},
+      { path: "privacy", element: <PrivacyPolicy />},
 
       // Protected pages
       {
@@ -63,22 +72,6 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <BookDetails />
-          </PrivateRoute>
-        ),
-      },
-      {
-        path: "profile",
-        element: (
-          <PrivateRoute>
-            <Profile />
-          </PrivateRoute>
-        ),
-      },
-      {
-        path: "update-profile",
-        element: (
-          <PrivateRoute>
-            <UpdateProfile />
           </PrivateRoute>
         ),
       },
@@ -115,6 +108,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <Profile />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "update-profile",
+        element: (
+          <PrivateRoute>
+            <UpdateProfile />
           </PrivateRoute>
         ),
       },
@@ -158,6 +159,10 @@ const router = createBrowserRouter([
       },
       
       // Admin Routes
+      {
+        path: "stats",
+        element: <AdminRoute><Analytics /></AdminRoute>
+      },
       {
         path: "all-users",
         element: <AdminRoute><ManageUsers/></AdminRoute>

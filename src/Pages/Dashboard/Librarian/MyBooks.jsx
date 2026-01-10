@@ -34,7 +34,7 @@ const fetchMyBooks = async () => {
   }, [user]);
 
   return (
-    <div className="min-h-screen p-6 bg-gray-50">
+    <div className="min-h-screen p-6 ">
       <title>BookCourier | My Books</title>
       <Toaster position="top-right" />
       <h1 className="text-3xl font-bold mb-6 text-primary">My Books</h1>
@@ -45,8 +45,8 @@ const fetchMyBooks = async () => {
         <p>No books found. Add some!</p>
       ) : (
         <div className="overflow-x-auto">
-          <table className="table w-full border border-gray-200">
-            <thead className="bg-gray-100">
+          <table className="table bg-[var(--color-bg)] w-full rounded-lg">
+            <thead className="graybg">
               <tr>
                 <th>Image</th>
                 <th>Book Name</th>
@@ -57,7 +57,7 @@ const fetchMyBooks = async () => {
             </thead>
             <tbody>
               {books.map((book) => (
-                <tr key={book._id} className="hover:bg-gray-50">
+                <tr key={book._id} className="hover:bg-[var(--color-hoverbg)]">
                   <td>
                     <img
                       src={book.image}

@@ -44,7 +44,7 @@ const Payment = () => {
   if (isError || !order) return <div className="text-center mt-20">Order not found!</div>;
 
   return (
-    <div className="max-w-md mx-auto mt-10 bg-white shadow-lg p-5 rounded">
+    <div className="max-w-md mx-auto mt-10 graybg shadow-lg p-5 rounded">
       <title>BookCourier | Confirm Payment</title>
       <h2 className="text-2xl font-bold mb-5 text-center">Confirm Payment</h2>
 

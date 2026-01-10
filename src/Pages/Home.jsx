@@ -26,13 +26,13 @@ const Home = () => (
       </div>
     </div>
 
-    <div className="bg-gray-200 ">
+    <div className="graybg">
       <Coverage/>
     </div>
     
     <WhyChooseUs />
 
-    <div className="bg-gray-200">
+    <div className="graybg">
       <HowItWorks />
       <OurMission />
     </div>

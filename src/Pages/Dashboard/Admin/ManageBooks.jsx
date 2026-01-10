@@ -61,7 +61,7 @@ const ManageBooks = () => {
 };
 
   return (
-    <div className="min-h-screen p-6 bg-gray-50">
+    <div className="min-h-screen p-6 whitebg">
       <title>BookCourier | Library Collection</title>
       <Toaster position="top-right" />
       <h1 className="text-3xl font-bold mb-6 text-primary">Manage Books</h1>
@@ -72,21 +72,21 @@ const ManageBooks = () => {
         <p className="text-gray-500">No books available.</p>
       ) : (
         <div className="overflow-x-auto shadow-lg rounded-lg border border-gray-200">
-          <table className="min-w-full bg-white divide-y divide-gray-200">
-            <thead className="bg-gray-100">
+          <table className="min-w-full divide-y divide-gray-200">
+            <thead className="graybg">
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Image</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Book Name</th>
-                <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Added By</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Price</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Rating</th>
-                <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
-                <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-secondary uppercase tracking-wider">Image</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-secondary uppercase tracking-wider">Book Name</th>
+                <th className="px-6 py-3 text-center text-xs font-medium text-secondary uppercase tracking-wider">Added By</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-secondary uppercase tracking-wider">Price</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-secondary uppercase tracking-wider">Rating</th>
+                <th className="px-6 py-3 text-center text-xs font-medium text-secondary uppercase tracking-wider">Status</th>
+                <th className="px-6 py-3 text-center text-xs font-medium text-secondary uppercase tracking-wider">Actions</th>
               </tr>
             </thead>
-            <tbody className="bg-white divide-y divide-gray-200">
+            <tbody className="divide-y divide-gray-200 bg-[var(--color-bg)]">
               {books.map((book) => (
-                <tr key={book._id} className="hover:bg-gray-50">
+                <tr key={book._id} className="hover:bg-[var(--color-hoverbg)]">
                   <td className="px-6 py-4">
                     <img
                       src={book.image}
@@ -94,8 +94,8 @@ const ManageBooks = () => {
                       className="w-16 h-20 object-cover rounded-lg"
                     />
                   </td>
-                  <td className="px-6 py-4 text-gray-700 font-medium">{book.bookName}</td>
-                  <td className="px-6 py-4 text-gray-700 font-medium">
+                  <td className="px-6 py-4 description font-medium">{book.bookName}</td>
+                  <td className="px-6 py-4 description font-medium">
                     <div className="flex gap-4 items-center space-y-1">
                         <img
                         src={book.librarianImage}
@@ -109,9 +109,9 @@ const ManageBooks = () => {
                     </div>
                   </td>
 
-                  <td className="px-6 py-4 text-gray-700">${book.price.toFixed(2)}</td>
-                  <td className="px-6 py-4 text-gray-700">{book.rating || "N/A"}</td>
-                  <td className="px-6 py-4 text-gray-700 font-medium">{book.status}</td>
+                  <td className="px-6 py-4 description">${book.price.toFixed(2)}</td>
+                  <td className="px-6 py-4 description">{book.rating || "N/A"}</td>
+                  <td className="px-6 py-4 description font-medium">{book.status}</td>
                   <td className="px-6 py-4 flex justify-center gap-2">
                     <button
                       onClick={() => togglePublish(book._id, book.status)}

@@ -58,13 +58,13 @@ const Wishlist = () => {
   return (
     <div className="max-w-6xl mx-auto p-6">
       <title>BookCourier | My Wishlist</title>
-      <h1 className="text-3xl font-bold text-gray-800 mb-6">My Wishlist</h1>
+      <h1 className="text-3xl font-bold text-primary mb-6">My Wishlist</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {wishlist.map((item) => (
           <div
             key={item.bookId}
-            className="bg-white shadow-md rounded-xl overflow-hidden flex flex-col"
+            className="graybg shadow-md rounded-xl overflow-hidden flex flex-col"
           >
             <img
               src={item.bookDetails?.image || "https://via.placeholder.com/200x300"}
@@ -73,14 +73,14 @@ const Wishlist = () => {
             />
             <div className="p-4 flex-1 flex flex-col justify-between">
               <div>
-                <h2 className="text-lg font-semibold text-gray-800 mb-1">
+                <h2 className="text-lg font-semibold text-secondary mb-1">
                   {item.bookDetails?.bookName || "Unknown Book"}
                 </h2>
-                <p className="text-gray-600 mb-1">
-                  <strong>Author:</strong> {item.bookDetails?.author || "Unknown"}
+                <p className="description mb-1">
+                  <strong className="text-secondary">Author :</strong> {item.bookDetails?.author || "Unknown"}
                 </p>
-                <p className="text-gray-600 mb-2">
-                  <strong>Price:</strong> ${item.bookDetails?.price || "0"}
+                <p className="description mb-2">
+                  <strong className="text-secondary">Price :</strong> ${item.bookDetails?.price || "0"}
                 </p>
               </div>
 

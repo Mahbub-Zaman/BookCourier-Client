@@ -43,7 +43,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="bg-gray-200 py-12 px-4 md:px-8 min-h-screen border-b-theme">
+    <div className="whitebg py-12 px-4 md:px-8 min-h-screen border-b-theme">
      <div className="max-w-4xl mx-auto px-4 py-16">
         <title>BookCourier | FAQ</title>
 
@@ -55,9 +55,9 @@ const Faq = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              data-aos="fade-up"
+              data-aos=""
               data-aos-delay={index * 100}
-              className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="graybg p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300"
             >
               <div
                 className="flex justify-between items-center cursor-pointer"
@@ -65,14 +65,14 @@ const Faq = () => {
               >
                 <h3 className="text-lg md:text-xl text-blacktext font-semibold">{faq.question}</h3>
                 {openIndex === index ? (
-                  <FaChevronUp className="text-green-500 text-lg md:text-xl" />
+                  <FaChevronUp className="text-red-500 text-lg md:text-xl" />
                 ) : (
                   <FaChevronDown className="text-green-500 text-lg md:text-xl" />
                 )}
               </div>
 
               {openIndex === index && (
-                <p className="mt-4 text-gray-700 text-sm md:text-base leading-relaxed">
+                <p className="mt-4 description text-sm md:text-base leading-relaxed">
                   {faq.answer}
                 </p>
               )}

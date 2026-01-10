@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "bookcourier-ba441",
+    "prod": "bookcourier-ba441"
+  },
+  "targets": {},
+  "etags": {}
+}

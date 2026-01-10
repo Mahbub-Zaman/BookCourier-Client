@@ -35,7 +35,7 @@ const PaymentHistory = () => {
 
       <div className="overflow-x-auto">
         <table className="min-w-full border border-gray-200">
-          <thead className="bg-gray-100 text-gray-700">
+          <thead className="graybg text-secondary">
             <tr className="text-left">
               <th className="p-3 border-b">Product</th>
               <th className="p-3 border-b">Amount</th>
@@ -45,13 +45,13 @@ const PaymentHistory = () => {
               <th className="p-3 border-b">Action</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="bg-[var(--color-bg)]">
             {payments.map((payment) => {
               const paidDate = new Date(payment.paidAt);
               return (
                 <tr
                   key={payment._id}
-                  className="hover:bg-gray-50 text-gray-700 align-middle"
+                  className="hover:bg-[var(--color-hoverbg)] description align-middle"
                 >
                   {/* Product */}
                   <td className="p-3 border-b">
@@ -92,7 +92,7 @@ const PaymentHistory = () => {
                     {payment.book ? (
                       <Link
                         to={`/book/${payment.book._id}`}
-                        className="inline-block bg-primary text-white py-1 px-3 rounded hover:bg-blue-600 transition text-xs sm:text-sm"
+                        className="btn-primary btn-sm px-3 py-1 text-sm sm:text-base rounded-lg"
                       >
                         View Details
                       </Link>
